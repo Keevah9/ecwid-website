@@ -1,4 +1,7 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Poppins:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +12,7 @@ body {
     background-color: white;
     min-height: 100vh;
     width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -246,7 +250,7 @@ h5 {
 .btnContainer p,
 .btnContainer1 p {
     width: 69%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: left;
 }
 .main1 p{
@@ -524,6 +528,9 @@ input{
         font-size: 2.6rem;
         text-align: center;
     }
+    .mainSection p{
+        font-size: 1.2rem;
+    }
     .gridContainer,
     .gridContainer1 {
         display: flex;
@@ -559,12 +566,15 @@ input{
     .equal1 p,
     .equal p {
         min-width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .main,
     .main1 {
         width: 100%;
         padding: 0 .5rem;
+    }
+    .main p, .main1 p{
+        font-size: 1.1rem;
     }
     .anotherBtn {
         margin: 0 auto;
@@ -578,7 +588,7 @@ input{
     .btnContainer1 p {
         min-width: 100%;
         padding: 0;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
     .btnContainer1,
     .btnContainer {
@@ -591,6 +601,9 @@ input{
         display: block;
         padding: 3rem 0;
         width: 90%;
+    }
+    .worldSection p, .colCon p{
+        font-size: 1.1rem;
     }
     .lastSection{
         border: none;
@@ -614,11 +627,11 @@ input{
         padding: 0;
         text-align: center;
     }
+    
         .footerCon {
             display: block;
             width: 100%;
             text-align: left;
-            border: 2px solid red;
         }
     
         footer {
