@@ -15,7 +15,7 @@ body {
 }
 
 html {
-    font-size: 62.5;
+    font-size: 62.5%;
 }
 
 /* nav */
@@ -28,7 +28,7 @@ header {
 li {
     list-style: none;
     padding-right: 1.2rem;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .brand {
@@ -82,7 +82,7 @@ li a:hover{
 
 .btn {
     padding: .5rem 1rem;
-    min-width: 12rem;
+    min-width: 20rem;
     background-color: black;
     color: whitesmoke;
     border-radius: 5px;
@@ -91,7 +91,7 @@ li a:hover{
     background-color: blanchedalmond;
     color: black;
     padding: 1rem 2rem;
-    font-size: .8rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     border-radius: 10px;
     display: inline-block;
@@ -114,8 +114,15 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+
 p{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+        /* max-width: 35rem; */
+        text-align: left;
+        /* padding: 2rem 0; */
+}
+.mainSection p {
+    font-size: 1.5rem;
     max-width: 35rem;
     text-align: center;
     padding: 2rem 0;
@@ -125,10 +132,12 @@ h4 {
     width: fit-content;
 }
 h5 {
-    font-size: .8rem;
+    font-size: 1rem;
     text-align: center;
 }
-
+span{
+    font-size: 1.1rem;
+}
 /* main section */
 
 .mainContainer {
@@ -192,7 +201,6 @@ h5 {
 .gridContainer p {
     padding: 0.5rem 0 2.5rem 0;
     width: fit-content;
-    text-align: left;
 }
 
 .main,
@@ -202,7 +210,9 @@ h5 {
     max-width: 100%;
     padding: 0 2rem;
 }
-
+.main1 p{
+    padding: 1rem 0 3rem 0;
+}
 .btnContainer,
 .btnContainer1 {
     grid-column: b;
@@ -258,12 +268,6 @@ h5 {
 .btnContainer p,
 .btnContainer1 p {
     width: 69%;
-    font-size: 1.1rem;
-    text-align: left;
-}
-
-.main1 p {
-    text-align: left;
 }
 
 .btnContainer1 p {
@@ -288,7 +292,6 @@ h5 {
     max-width: 90%;
     padding: 0.5rem 0;
     padding-bottom: 3rem;
-    text-align: left;
 }
 
 .btnContainer1 {
@@ -322,10 +325,6 @@ h5 {
     min-width: 45%;
 }
 
-.worldCon p {
-    text-align: left;
-}
-
 .square,
 .round {
     position: absolute;
@@ -355,21 +354,19 @@ h5 {
     gap: 15px;
     min-width: 50%;
 }
-
-.span {
+.span span{
     font-size: 2.8rem;
     font-weight: bolder;
     width: fit-content;
     text-align: center;
 }
-
 sup {
     font-weight: normal;
     font-size: 1.8rem;
     margin-left: -1rem;
 }
 
-/* four section */
+/* fourth section */
 
 .colCon {
     padding: 0 2rem;
@@ -456,11 +453,11 @@ footer {
 }
 
 footer h6 {
-    font-size: .7rem;
+    font-size: .9rem;
     line-height: 1.2rem;
 }
 footer h6:hover{
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: all 0.6s linear;
 }
 
@@ -480,7 +477,7 @@ footer .brand {
 }
 
 footer h3 {
-    font-size: .8rem;
+    font-size: 1.1rem;
     grid-row: c;
     padding-bottom: 1.7rem;
 }
@@ -578,7 +575,10 @@ input {
 
 /* media queries */
 
-@media all and (max-width:679px) {
+@media all and (max-width:620px) {
+    p{
+        min-width: 100%;
+    } 
     .navSecond{
         padding-bottom: 1rem;
     }
@@ -589,10 +589,6 @@ input {
     h1 {
         font-size: 2.6rem;
         text-align: center;
-    }
-
-    .mainSection p {
-        font-size: 1.2rem;
     }
 
     .gridContainer,
@@ -609,7 +605,7 @@ input {
     .bothequal1 {
         display: block;
         max-width: 100%;
-        padding: 0 .5rem;
+        padding: 0 2.5rem;
     }
 
     .gridImg,
@@ -619,7 +615,7 @@ input {
         position: relative;
         left: 0;
         padding: 0;
-        width: 100%;
+        width: 94%;
         display: block;
     }
 
@@ -630,21 +626,10 @@ input {
         margin-bottom: 2rem;
     }
 
-    .equal1 p,
-    .equal p {
-        min-width: 100%;
-        font-size: 1.2rem;
-    }
-
     .main,
     .main1 {
         width: 100%;
-        padding: 0 .5rem;
-    }
-
-    .main p,
-    .main1 p {
-        font-size: 1.1rem;
+        padding: 0 2.5rem;
     }
 
     .anotherBtn {
@@ -657,16 +642,12 @@ input {
         display: none;
     }
 
-    .btnContainer p,
-    .btnContainer1 p {
-        min-width: 100%;
-        padding: 0;
-        font-size: 1.1rem;
-    }
-
     .btnContainer1,
     .btnContainer {
         padding: 1rem;
+    }
+    .btnContainer1 p{
+        padding: 0;
     }
 
     .genSection {
@@ -678,11 +659,6 @@ input {
         display: block;
         padding: 3rem 0;
         width: 90%;
-    }
-
-    .worldSection p,
-    .colCon p {
-        font-size: 1.1rem;
     }
 
     .lastSection {
@@ -717,6 +693,7 @@ input {
         display: block;
         width: 100%;
         text-align: left;
+        padding: 0 2rem;
     }
 
     footer {
@@ -729,7 +706,7 @@ input {
     }
 
     footer h6 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.6rem;
     }
 
@@ -749,7 +726,7 @@ input {
     }
 
     .term {
-        padding: 2rem 1rem;
+        padding: 2rem;
         padding-bottom: 0;
         max-width: 100%;
     }
@@ -805,7 +782,7 @@ input {
 
 
 
-@media (min-width:680px) {
+@media (min-width:621px) {
     .navCon {
         width: 100%;
         justify-content: flex-start;
