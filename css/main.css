@@ -673,6 +673,7 @@ input {
 
     .firstCol {
         min-width: 100%;
+        margin: 0;
     }
 
     .span {
