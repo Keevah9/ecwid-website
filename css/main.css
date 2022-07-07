@@ -116,16 +116,14 @@ h2 {
 }
 
 p{
-    font-size: 1.5rem;
-        /* max-width: 35rem; */
-        text-align: left;
-        /* padding: 2rem 0; */
+    font-size: 1.7rem;
+    text-align: left;
 }
 .mainSection p {
-    font-size: 1.5rem;
-    max-width: 35rem;
+    font-size: 1.7rem;
+    max-width: 80rem;
     text-align: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 h4 {
     font-size: 1.4rem;
@@ -142,7 +140,7 @@ span{
 
 .mainContainer {
     min-height: 70%;
-    max-width: 40rem;
+    max-width: 100%;
     margin: 0 auto;
     margin-top: 4rem;
 }
@@ -162,8 +160,9 @@ span{
 }
 .ratingSection {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .rating {
@@ -179,20 +178,20 @@ span{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
-        "s s . "
+        "s s s "
         "f f ."
         "b b b"
     ;
     position: relative;
-    max-width: 58rem;
+    max-width: 80rem;
     padding: 0 2rem;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
 .gridContainer1 {
     grid-template-areas:
-        ". s s "
+        "s s s "
         ". f f"
         "b b b"
     ;
@@ -201,14 +200,16 @@ span{
 .gridContainer p {
     padding: 0.5rem 0 2.5rem 0;
     width: fit-content;
+    margin-bottom: 4rem;
 }
 
 .main,
 .main1 {
     grid-column: s;
-    max-width: 34rem;
-    max-width: 100%;
+    /* max-width: 34rem; */
+    max-width: 75rem;
     padding: 0 2rem;
+    margin-bottom: 3rem;
 }
 .main1 p{
     padding: 1rem 0 3rem 0;
@@ -216,18 +217,18 @@ span{
 .btnContainer,
 .btnContainer1 {
     grid-column: b;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     background-color: rgb(195, 225, 225);
-    max-width: 58rem;
+    max-width: 75rem;
     position: relative;
     left: -2%;
     top: 5%;
-    padding: 2rem 1rem 0 1rem;
     border-radius: 15px;
     min-height: 70%;
     border: 2px black solid;
     padding: 2rem 3rem;
+    margin-bottom: 5rem;
 }
 
 .textCon {
@@ -261,7 +262,7 @@ span{
     background-color: black;
     position: absolute;
     left: 10%;
-    bottom: -34%;
+    bottom: -55%;
     z-index: 1;
 }
 
@@ -303,8 +304,9 @@ span{
 /* third section */
 
 .genSection {
-    max-width: 100%;
-    padding: 0 2.5rem;
+    max-width: 80rem;
+    margin: auto;
+    position: relative;
 }
 
 .worldSection,
@@ -312,13 +314,13 @@ span{
     border: 2px solid black;
     display: flex;
     align-items: center;
-    max-width: 55rem;
+    max-width: 75rem;
     margin: 5rem auto;
     border-radius: 20px;
     position: relative;
-    left: -1%;
+    left: -2%;
     min-height: 40%;
-    padding: 2rem 2.3rem;
+    padding: 2rem;
 }
 
 .worldCon {
@@ -370,19 +372,20 @@ sup {
 
 .colCon {
     padding: 0 2rem;
-    max-width: 100%;
+    max-width: 80rem;
     min-height: 50%;
-    margin: 0 auto;
+    margin: 4rem auto;
 }
 
 .threeCol {
     display: flex;
-    max-width: 55.4rem;
-    min-height: 18rem;
-    justify-content: space-between;
+    max-width: 75rem;
+    min-height: 20rem;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     position: relative;
-    margin: 0 auto;
+    left: -2%;
+    margin: 4rem auto;
     gap: 20px;
 }
 
@@ -395,23 +398,24 @@ sup {
 
 .threeCol h4 {
     padding: 0;
-
 }
 
 .firstCol {
-    max-width: 15rem;
+    max-width: 23.5rem;
     min-height: 100%;
     padding: 0 1rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     border: 2px solid black;
     border-radius: 15px;
+    margin: 5rem 0;
 }
 
 .firstCol span {
     font-weight: bolder;
     font-size: 1rem;
-    padding-bottom: 1.5rem;
+    padding-top: 2rem;
 }
 
 .colImg {
@@ -425,6 +429,7 @@ sup {
 
 .lastCon {
     display: flex;
+    margin-bottom: 5rem;
 }
 
 .spanLast {
@@ -449,6 +454,7 @@ footer {
     background-color: black;
     color: rgb(209, 208, 208);
     min-height: 40%;
+    margin-top: 10rem;
     padding: 3rem 1rem;
 }
 
@@ -735,15 +741,17 @@ input {
         text-align: left;
         padding-top: .5rem;
     }
-
     .icons img {
-        width: 10%;
+        width: 7%;
         height: 1%;
         display: inline-block;
     }
-
+    .app img{
+        width: 20%;
+    }
     .app {
-        justify-content: space-around;
+        justify-content: center;
+        gap: 20px;
     }
 
     .footerLast {
@@ -782,7 +790,7 @@ input {
 
 
 
-@media (min-width:621px) {
+@media screen and (min-width:621px) {
     .navCon {
         width: 100%;
         justify-content: flex-start;
