@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 2px solid red; */
 }
 
 body {
@@ -217,12 +218,10 @@ span{
 .btnContainer,
 .btnContainer1 {
     grid-column: b;
-    /* display: flex;
-    justify-content: space-between; */
     background-color: rgb(195, 225, 225);
-    max-width: 75rem;
+    max-width: 72rem;
     position: relative;
-    left: -2%;
+    left: 2%;
     top: 5%;
     border-radius: 15px;
     min-height: 70%;
@@ -271,10 +270,6 @@ span{
     width: 69%;
 }
 
-.btnContainer1 p {
-    width: 72%;
-}
-
 .bothequal,
 .bothequal1 {
     display: flex;
@@ -314,11 +309,10 @@ span{
     border: 2px solid black;
     display: flex;
     align-items: center;
-    max-width: 75rem;
-    margin: 5rem auto;
+    max-width: 72rem;
+    margin: 4rem auto;
     border-radius: 20px;
     position: relative;
-    left: -2%;
     min-height: 40%;
     padding: 2rem;
 }
@@ -374,18 +368,16 @@ sup {
     padding: 0 2rem;
     max-width: 80rem;
     min-height: 50%;
-    margin: 4rem auto;
+    margin: 0 auto;
 }
 
 .threeCol {
     display: flex;
-    max-width: 75rem;
+    max-width: 72rem;
     min-height: 20rem;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     position: relative;
-    left: -2%;
-    margin: 4rem auto;
+    margin: 2rem auto;
     gap: 20px;
 }
 
@@ -401,7 +393,7 @@ sup {
 }
 
 .firstCol {
-    max-width: 23.5rem;
+    max-width: 22.5rem;
     min-height: 100%;
     padding: 0 1rem;
     padding-bottom: 2rem;
@@ -429,7 +421,7 @@ sup {
 
 .lastCon {
     display: flex;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .spanLast {
@@ -454,7 +446,7 @@ footer {
     background-color: black;
     color: rgb(209, 208, 208);
     min-height: 40%;
-    margin-top: 10rem;
+    margin-top: 3rem;
     padding: 3rem 1rem;
 }
 
@@ -620,24 +612,16 @@ input {
     .btnContainer1 {
         position: relative;
         left: 0;
-        padding: 0;
         width: 94%;
         display: block;
     }
-
+    
     .gridImg,
     .gridImg1 {
         min-width: 73%;
         max-height: 50vh;
         margin-bottom: 2rem;
     }
-
-    .main,
-    .main1 {
-        width: 100%;
-        padding: 0 2.5rem;
-    }
-
     .anotherBtn {
         margin: 0 auto;
         margin-bottom: 3rem;
@@ -650,7 +634,7 @@ input {
 
     .btnContainer1,
     .btnContainer {
-        padding: 1rem;
+        padding: 1.5rem;
     }
     .btnContainer1 p{
         padding: 0;
@@ -663,17 +647,16 @@ input {
     .worldSection,
     .lastSection {
         display: block;
-        padding: 3rem 0;
         width: 90%;
     }
 
     .lastSection {
         border: none;
     }
-
     .firstCol {
         min-width: 100%;
         margin: 0;
+        padding: 0 3rem;
     }
 
     .span {
@@ -727,10 +710,12 @@ input {
     }
 
     input {
-        margin-bottom: 2rem;
+        margin: 2rem 0;
         width: 100%;
     }
-
+    .search{
+        top: 40%;
+    }
     .terms {
         display: none;
     }
@@ -745,15 +730,20 @@ input {
         text-align: left;
         padding-top: .5rem;
     }
+    .icons{
+        display: flex;
+        margin: 1rem  0;
+    }
     .icons img {
         width: 7%;
         height: 1%;
-        display: inline-block;
+        margin: 0 auto;
     }
     .app img{
         width: 20%;
     }
     .app {
+        margin-top: 3rem;
         justify-content: center;
         gap: 20px;
     }
