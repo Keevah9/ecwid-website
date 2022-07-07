@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Poppins:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 2px solid red; */
 }
 
 body {
@@ -25,47 +24,45 @@ header {
     width: 100%;
     box-shadow: 0 5px 10px gray;
     background-color: azure;
-    padding: 2rem 1rem;
-    margin-bottom: 3rem;
 }
-
 li {
     list-style: none;
-    padding-right: 1.5rem;
-    font-size: 1.2rem;
+    padding-right: 1.2rem;
+    font-size: 1.1rem;
 }
+
 .brand {
     font-size: 2rem;
-    padding-right: 3rem;
+    padding-right: 2rem;
 }
 li a {
     text-decoration: none;
     color: black;
+    display: block;
+    width: fit-content;
+    padding: .5rem 1rem;
+    transition: all 0.3s linear;
 }
 .menuB {
     display: none;
 }
-ul {
+ul{
     height: 0;
     overflow: hidden;
+    transition: all 0.3s linear;
 }
-.menuHeader {
+.menuHeader{
     display: flex;
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
 }
-.addHeight {
-    height: auto;
+.addHeight{
+    height: fit-content;
 }
-ul a {
-    display: block;
-    width: fit-content;
-    padding: .5rem 1rem;
-    transform: all 0.3s linear;
-}
-ul a:hover {
+li a:hover{
     background-color: blanchedalmond;
+    font-size: 1rem;
 }
 .menuBtn {
     display: block;
@@ -78,6 +75,7 @@ ul a:hover {
     background-color: aliceblue;
     box-shadow: 0 5px 15px gray;
     z-index: 2;
+    padding: 0.5rem 1rem;
 }
 
 /* buttons */
@@ -89,7 +87,6 @@ ul a:hover {
     color: whitesmoke;
     border-radius: 5px;
 }
-
 .coloredBtn {
     background-color: blanchedalmond;
     color: black;
@@ -99,13 +96,11 @@ ul a:hover {
     border-radius: 10px;
     display: inline-block;
 }
-
 .anotherBtn {
     background-color: rgb(195, 225, 225);
     color: black;
     border-radius: 20px;
 }
-
 /* general elements */
 
 .arrow {
@@ -119,7 +114,7 @@ h1 {
 h2 {
     font-size: 2rem;
 }
-p {
+p{
     font-size: 1.3rem;
     max-width: 35rem;
     text-align: center;
@@ -133,13 +128,14 @@ h5 {
     font-size: .8rem;
     text-align: center;
 }
+
 /* main section */
 
 .mainContainer {
     min-height: 70%;
     max-width: 40rem;
     margin: 0 auto;
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 .mainSection {
     display: flex;
@@ -153,12 +149,14 @@ h5 {
     border-radius: 50%;
     max-width: 60%;
     max-height: 25rem;
+    margin: 1.4rem 0;
 }
 .ratingSection {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .rating {
     padding-bottom: 2rem;
 }
@@ -182,6 +180,7 @@ h5 {
     margin: 0 auto;
     margin-top: 5rem;
 }
+
 .gridContainer1 {
     grid-template-areas:
         ". s s "
@@ -189,11 +188,13 @@ h5 {
         "b b b"
     ;
 }
+
 .gridContainer p {
     padding: 0.5rem 0 2.5rem 0;
     width: fit-content;
     text-align: left;
 }
+
 .main,
 .main1 {
     grid-column: s;
@@ -201,6 +202,7 @@ h5 {
     max-width: 100%;
     padding: 0 2rem;
 }
+
 .btnContainer,
 .btnContainer1 {
     grid-column: b;
@@ -217,9 +219,11 @@ h5 {
     border: 2px black solid;
     padding: 2rem 3rem;
 }
+
 .textCon {
     padding-left: 4.5rem;
 }
+
 .gridImg,
 .gridImg1 {
     position: absolute;
@@ -230,13 +234,16 @@ h5 {
     border-radius: 10px;
     z-index: 1;
 }
+
 .gridImg1 {
     left: 0;
 }
+
 .lineImg {
     position: relative;
     max-width: 70%;
 }
+
 .line {
     width: 100%;
     height: 2px;
@@ -247,35 +254,43 @@ h5 {
     bottom: -34%;
     z-index: 1;
 }
+
 .btnContainer p,
 .btnContainer1 p {
     width: 69%;
     font-size: 1.1rem;
     text-align: left;
 }
-.main1 p{
+
+.main1 p {
     text-align: left;
 }
+
 .btnContainer1 p {
     width: 72%;
 }
+
 .bothequal,
 .bothequal1 {
     display: flex;
     grid-column: f;
     padding: 0 2rem;
 }
+
 .equal1,
 .equal {
     padding-top: 3rem;
     height: fit-content;
 }
-.equal1 p, .equal p {
+
+.equal1 p,
+.equal p {
     max-width: 90%;
     padding: 0.5rem 0;
     padding-bottom: 3rem;
     text-align: left;
 }
+
 .btnContainer1 {
     display: flex;
     justify-content: flex-end;
@@ -288,7 +303,9 @@ h5 {
     max-width: 100%;
     padding: 0 2.5rem;
 }
-.worldSection, .lastSection {
+
+.worldSection,
+.lastSection {
     border: 2px solid black;
     display: flex;
     align-items: center;
@@ -300,43 +317,52 @@ h5 {
     min-height: 40%;
     padding: 2rem 2.3rem;
 }
+
 .worldCon {
     min-width: 45%;
 }
+
 .worldCon p {
     text-align: left;
 }
-.square, .round {
+
+.square,
+.round {
     position: absolute;
     right: 10%;
-    top: -6%;
+    top: -4%;
     height: 2.5rem;
     min-width: 2.5rem;
     transform: rotate(45deg);
     border: 2px solid black;
     z-index: 1;
 }
-.sqr, .rnd {
+
+.sqr,
+.rnd {
     position: absolute;
     right: 10%;
-    top: -3%;
+    top: -2%;
     height: 2.5rem;
     min-width: 2.5rem;
     transform: rotate(45deg);
     background-color: blanchedalmond;
 }
+
 .spanNo {
     display: flex;
     justify-content: center;
     gap: 15px;
     min-width: 50%;
 }
+
 .span {
     font-size: 2.8rem;
     font-weight: bolder;
     width: fit-content;
     text-align: center;
 }
+
 sup {
     font-weight: normal;
     font-size: 1.8rem;
@@ -351,6 +377,7 @@ sup {
     min-height: 50%;
     margin: 0 auto;
 }
+
 .threeCol {
     display: flex;
     max-width: 55.4rem;
@@ -361,16 +388,19 @@ sup {
     margin: 0 auto;
     gap: 20px;
 }
+
 .threeCol p {
     text-align: left;
     padding-top: 0;
     height: 100%;
     max-width: 100%;
 }
+
 .threeCol h4 {
     padding: 0;
 
 }
+
 .firstCol {
     max-width: 15rem;
     min-height: 100%;
@@ -380,11 +410,13 @@ sup {
     border: 2px solid black;
     border-radius: 15px;
 }
+
 .firstCol span {
     font-weight: bolder;
     font-size: 1rem;
     padding-bottom: 1.5rem;
 }
+
 .colImg {
     margin: 2rem 0;
     width: 3rem;
@@ -393,73 +425,91 @@ sup {
     background-color: blanchedalmond;
     border-radius: 10px;
 }
-.lastCon{
+
+.lastCon {
     display: flex;
 }
-.lastCon h2{
-    padding: 0 3rem;
-}
-.spanLast{
+
+.spanLast {
     padding: 3rem;
 }
-.round, .rnd{
+
+.round,
+.rnd {
     border-radius: 50%;
     top: 70%;
     right: 2%;
 }
-.rnd{
+
+.rnd {
     right: 2.5%;
     top: 72%;
 }
 
 /* footer */
 
-footer{
+footer {
     background-color: black;
     color: rgb(209, 208, 208);
     min-height: 40%;
     padding: 3rem 1rem;
 }
-footer h6{
+
+footer h6 {
     font-size: .7rem;
     line-height: 1.2rem;
 }
-footer .brand{
+footer h6:hover{
+    font-size: 1rem;
+    transition: all 0.6s linear;
+}
+
+footer .brand {
     margin-top: -1rem;
 }
-.footerCon{
+
+.footerCon {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(2, auto) ;
-    grid-template-areas: 
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
         " c a a a  a"
         " c b b b b"
     ;
     padding: 2rem 1rem;
 }
-footer h3{
+
+footer h3 {
     font-size: .8rem;
     grid-row: c;
     padding-bottom: 1.7rem;
 }
-.footer, .footer1, .footer2, .footer3{
-    /* grid-column: a; */
+
+.footer,
+.footer1,
+.footer2,
+.footer3 {
     grid-row: a;
 }
 
-.footer4, .footer5, .footer6{
+.footer4,
+.footer5,
+.footer6 {
     grid-row: b;
     padding-top: 2rem;
 }
+
 .footer6 {
     grid-column: span 2;
 }
-.footerIcons{
+
+.footerIcons {
     margin-top: 4rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-input{
+
+input {
     width: 15rem;
     height: 2rem;
     padding: 0 .5rem;
@@ -468,10 +518,12 @@ input{
     margin-top: 1rem;
     background-color: inherit;
 }
-.searchCon{
+
+.searchCon {
     position: relative;
 }
-.search{
+
+.search {
     position: absolute;
     width: 1rem;
     height: 1rem;
@@ -479,39 +531,46 @@ input{
     top: 27%;
     background-color: gray;
 }
-.conSec{
+
+.conSec {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-.icons img{
+
+.icons img {
     width: 1.5rem;
     height: 2rem;
     background-color: white;
     border-radius: 5px;
     margin-left: .6rem;
 }
-.app{
+
+.app {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
 }
-.app img{
+
+.app img {
     width: 6rem;
     border-radius: 5px;
 }
-.footerLast{
+
+.footerLast {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid gray;
     margin-top: 6rem;
     padding-top: 4rem;
 }
-.terms{
+
+.terms {
     display: flex;
     gap: 10px;
 }
-.left{
+
+.left {
     display: none;
 }
 
@@ -519,7 +578,10 @@ input{
 
 /* media queries */
 
-@media all and (max-width:640px) {
+@media all and (max-width:679px) {
+    .navSecond{
+        padding-bottom: 1rem;
+    }
     .btn {
         margin: 0 auto;
         display: block;
@@ -528,9 +590,11 @@ input{
         font-size: 2.6rem;
         text-align: center;
     }
-    .mainSection p{
+
+    .mainSection p {
         font-size: 1.2rem;
     }
+
     .gridContainer,
     .gridContainer1 {
         display: flex;
@@ -540,12 +604,14 @@ input{
         margin-top: 3rem;
         padding: 0 1rem;
     }
+
     .bothequal,
     .bothequal1 {
         display: block;
         max-width: 100%;
         padding: 0 .5rem;
     }
+
     .gridImg,
     .gridImg1,
     .btnContainer,
@@ -556,6 +622,7 @@ input{
         width: 100%;
         display: block;
     }
+
     .gridImg,
     .gridImg1 {
         min-width: 73%;
@@ -568,133 +635,172 @@ input{
         min-width: 100%;
         font-size: 1.2rem;
     }
+
     .main,
     .main1 {
         width: 100%;
         padding: 0 .5rem;
     }
-    .main p, .main1 p{
+
+    .main p,
+    .main1 p {
         font-size: 1.1rem;
     }
+
     .anotherBtn {
         margin: 0 auto;
         margin-bottom: 3rem;
         display: block;
     }
+
     .hide {
         display: none;
     }
+
     .btnContainer p,
     .btnContainer1 p {
         min-width: 100%;
         padding: 0;
         font-size: 1.1rem;
     }
+
     .btnContainer1,
     .btnContainer {
         padding: 1rem;
     }
+
     .genSection {
         padding: 0;
     }
-    .worldSection, .lastSection {
+
+    .worldSection,
+    .lastSection {
         display: block;
         padding: 3rem 0;
         width: 90%;
     }
-    .worldSection p, .colCon p{
+
+    .worldSection p,
+    .colCon p {
         font-size: 1.1rem;
     }
-    .lastSection{
+
+    .lastSection {
         border: none;
     }
+
     .firstCol {
         min-width: 100%;
     }
+
     .span {
         max-width: 100%;
         font-size: 2.5rem;
     }
+
     .worldCon {
         width: 100%;
         padding: 0 1rem;
     }
+
     .colCon {
         padding: 0;
         width: 90%;
     }
-    .lastSection h2{
+
+    .lastSection h2 {
         padding: 0;
         text-align: center;
     }
+
+    .footerCon {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    footer h3 {
+        font-size: 1.2rem;
+        padding-top: 1.2rem;
+    }
+
+    footer h6 {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+
+    .footerIcons {
+        display: block;
+        margin-top: -1rem;
+        padding: 0 1.4rem;
+    }
+
+    input {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .terms {
+        display: none;
+    }
+
+    .term {
+        padding: 2rem 1rem;
+        padding-bottom: 0;
+        max-width: 100%;
+    }
+
+    .term h5 {
+        text-align: left;
+        padding-top: .5rem;
+    }
+
+    .icons img {
+        width: 10%;
+        height: 1%;
+        display: inline-block;
+    }
+
+    .app {
+        justify-content: space-around;
+    }
+
+    .footerLast {
+        margin-top: 1.7rem;
+        padding: 1.5rem;
+    }
+
+    .footerLast h5 {
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+
+    .left {
+        display: inline-block;
+        width: 1.3rem;
+        height: 1.1rem;
+        background-color: gray;
+    }
+
+    .left {
+        display: inline-block;
+        width: 1.3rem;
+        height: 1.1rem;
+        background-color: gray;
+    }
     
-        .footerCon {
-            display: block;
-            width: 100%;
-            text-align: left;
-        }
+    .content {
+        display: none;
+        transition: all 0.6s linear;
+    }
     
-        footer {
-            padding: 0;
-        }
-    
-        footer h3 {
-            font-size: 1.2rem;
-            padding-top: 1.2rem;
-        }
-    
-        footer h6 {
-            font-size: 1.1rem;
-            line-height: 1.6rem;
-        }
-    
-        .footerIcons {
-            display: block;
-            margin-top: -1rem;
-            padding: 0 1.4rem;
-        }
-    
-        input {
-            margin-bottom: 2rem;
-            width: 100%;
-        }
-        .terms {
-            display: none;
-        }
-        .term {
-            padding: 2rem 1rem;
-            padding-bottom: 0;
-            max-width: 100%;
-        }
-        .term h5 {
-            text-align: left;
-            padding-top: .5rem;
-        }
-        .icons img {
-            width: 10%;
-            height: 1%;
-            display: inline-block;
-        }
-        .app {
-            justify-content: space-around;
-        }
-        .footerLast {
-            margin-top: 1.7rem;
-            padding: 1.5rem;
-        }
-        .footerLast h5 {
-            margin: 0 auto;
-            font-size: 1.2rem;
-        }
-        .left {
-            display: inline-block;
-            width: 1.3rem;
-            height: 1.1rem;
-            background-color: gray;
-        }
-        .content {
-            display: none;
-        }
+    .addContent .content {
+        display: block;
+    }
 }
 
 
@@ -703,6 +809,7 @@ input{
     .navCon {
         width: 100%;
         justify-content: flex-start;
+        padding: .5rem 1rem;
     }
     .navFirst {
         display: flex;
@@ -716,26 +823,36 @@ input{
         display: block;
         overflow: hidden;
     }
+
     .addHeight {
         height: auto;
     }
+
     .btn {
         display: block;
         margin: 0 auto;
     }
+
     ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: auto;
     }
+
     .menuB {
         display: block;
     }
+
     .menuBtn {
         display: none;
     }
+
     .menuHeader {
         padding: 0;
+    }
+    .term{
+        display: none;
     }
 }
 
@@ -743,22 +860,24 @@ input{
     .menuB {
         display: none;
     }
+
     .navFirst,
     .navSecond {
         display: flex;
         align-items: center;
         justify-content: flex-start;
     }
+
     .navCon {
         display: flex;
     }
+
     .navSecond {
         justify-content: flex-end;
     }
+
     .secondLink {
         height: auto;
         display: flex;
     }
 }
-
-
